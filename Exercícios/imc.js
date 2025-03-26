@@ -1,3 +1,13 @@
+/*
+    Crie um código que leia seu peso e altura e determine o seu IMC e sua categoria conforme resultado.
+    IMC = peso / (altura * altura)
+    Abaixo do peso: IMC menor que 18,5
+    Peso normal: IMC entre 18,5 e 25
+    Sobrepeso: IMC entre 25 e 30
+    Obesidade: IMC entre 30 e 40
+    Obesidade grave: IMC maior que 40
+ */
+
 const peso = 40;
 const altura = 1.60;
 const imc = peso / (altura * altura);
