@@ -1,30 +1,24 @@
-class Pessoa {
-    nome;
-    idade;
-    anoDeNascimento;
+/*
+Aula Array
+.push adiciona
+.pop exclui a ultima posição
+.shift exclui a primeira
+*/
 
-    constructor(nome, idade){
-        this.nome = nome;
-        this.idade = idade;
-        this.anoDeNascimento = 2025 - idade;
-    }
+const notas = []; 
 
-    descrever(){
-        console.log(`Meu nome é ${this.nome} e minha idade é ${this.idade}`)
-    }
+notas.push(5);
+notas.push(8);
+notas.push(7);
+notas.push(4);
+notas.push(6);
+
+let soma = 0;
+
+for (let i = 0; i < notas.length; i++) {
+    const nota = notas[i];
+    soma = soma + nota;        
 }
 
-function compararPessoas(p1, p2){
-    if (p1.idade > p2.idade){
-        console.log(`${p1.nome} é mais velho(a) que ${p2.nome}`);
-    } else if (p2.idade > p1.idade){
-        console.log(`${p2.nome} é mais velho(a) que ${p1.nome}`);
-    } else{
-        console.log(`${p1.nome} e ${p2.nome} tem a mesma idade`);
-    }
-}
-
-const carolina = new Pessoa('Carolina', 29);
-const lucas = new Pessoa('Lucas', 18);
-
-compararPessoas(carolina, lucas);
+const media = soma / notas.length;
+console.log(media);
